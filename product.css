@@ -20,7 +20,11 @@
   text-decoration: none;
 }
 .my {
-  margin: 1% 0 40% 5%;
+  position: relative;right: -25%;
+}
+.mine{
+  position: relative;right: 0%;
+  width: 40%;
 }
 /*
  * Dummy devices (replace them with your own or something else entirely!)
@@ -60,4 +64,14 @@
   .flex-md-equal > * {
     flex: 1;
   }
+}
+
+.parent {
+  text-align: center;
+    background-color: #333;
+}
+.child {
+  display: inline-block;
+
+  vertical-align: middle;
 }
