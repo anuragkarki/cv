@@ -1,45 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CV</title>
-     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
-    <title>anurag</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anurag Karki | About</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link href="product.css" rel="stylesheet">
-
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .info-box {
+      margin-top: 40px;
+    }
+    .info-box h4 {
+      margin-bottom: 0.5rem;
+    }
+    .profile-img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #f1f1f1;
+      padding: 30px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<header class="site-header py-3">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+  <header class="hero">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>Passionate Engineer | AI Explorer |</p>
+    </div>
+  </header>
 
-    <a class="nav-link fw-bold py-1 px-0" href="cv.html">CV</a>
-    <a class="nav-link fw-bold py-1 px-0" href="index.html">Projects</a>
-    <a class="nav-link fw-bold py-1 px-0" href="Gallery.html">Gallery</a>
-    <a class="nav-link fw-bold py-1 px-0" href="contact.html">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Anurag</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-</header>
 
+  <main class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h2 class="mb-4">Hi, I'm <strong>Anurag Karki</strong></h2>
+        <p>
+          I am a Mechanical Engineer and a graduate student at the University of Cincinnati with a focus on artificial intelligence, robotics, and UAV optimization.
+          I enjoy building intelligent systems that blend real-time perception with automation, and my work spans from drone development to AI-driven decision-making tools.
+        </p>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-left overflow-hidden">
-
-        <h1 class="display-5">Anurag Karki</h1>
-        <h2 class="display-6">Email: karkianurag48@gmail.com</h2>
-        <h2 class="display-6">Contact : 9860328812</h2>
-        <h2 class="display-6">Address : Bhaktapur, Nepal</h2>
-
+        <div class="info-box">
+          <h4><strong>Email:</strong> karkiag@mail.uc.edu</h4>
+          <h4><strong>Phone:</strong> 5134002285</h4>
+          <h4><strong>Location:</strong> Cincinnati, Ohio, USA</h4>
+          <h4><strong>GitHub:</strong> <a href="https://github.com/anuragkarki" target="_blank">github.com/anuragkarki</a></h4>
+          <h4><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/anuragkarki47" target="_blank">linkedin.com/in/anuragkarki47</a></h4>
+        </div>
+      </div>
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <img src="anu.png" alt="Anurag Karki" class="profile-img">
+      </div>
     </div>
-    <div >
-     <img width="450" src= "anu.png">
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Anurag Karki. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
