@@ -3,139 +3,82 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
-    <title>Anurag</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-
-
+    <title>Anurag Karki | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f8f9fa;
       }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
+      .project-card {
+        margin-bottom: 2rem;
       }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      .project-card img,
+      .project-card video {
+        width: 100%;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
+      .nav-link {
+        color: #0d6efd;
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="product.css" rel="stylesheet">
   </head>
   <body>
 
-<header class="site-header py-3">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-
-    <a class="nav-link fw-bold py-1 px-0" href="cv.html">CV</a>
-    <a class="nav-link fw-bold py-1 px-0" href="index.html">Projects</a>
-    <a class="nav-link fw-bold py-1 px-0" href="Gallery.html">Gallery</a>
-    <a class="nav-link fw-bold py-1 px-0" href="contact.html">Contact</a>
-  </nav>
-</header>
-
- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h1 class="display-4">BWB-UAV Optimization</h1>
-        <p class="lead">As a final year project, optimization of blended-wing-body(BWB) UAV was done using various optimization software like Aeolus and SU2.</p>
-        <a class="btn btn-outline-secondary" href="bwb.html">See More</a>
+    <header class="bg-white border-bottom shadow-sm mb-4">
+      <div class="container py-3">
+        <nav class="d-flex justify-content-center gap-4">
+          <a class="nav-link fw-bold" href="cv.html">CV</a>
+          <a class="nav-link fw-bold" href="index.html">Projects</a>
+          <a class="nav-link fw-bold" href="Gallery.html">Gallery</a>
+          <a class="nav-link fw-bold" href="contact.html">Contact</a>
+        </nav>
       </div>
-    </div>
-    <div >
-      <img height="450" src="bwb.png">
-    </div>
-  </div>
+    </header>
 
- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h1 class="display-4">Flight in-situ Data Acquisition</h1>
-        <p class="lead">A simple data acquisition system was built using arduino which was used for collection various data like temperature, humidity etc.</p>
-        <a class="btn btn-outline-secondary" href="insitu.html">See More</a>
+    <main class="container">
+      <div class="row align-items-center project-card">
+        <div class="col-md-6">
+          <h2 class="fw-bold">BWB-UAV Optimization</h2>
+          <p>As a final year project, optimization of blended-wing-body(BWB) UAV was done using various optimization software like Aeolus and SU2.</p>
+          <a class="btn btn-outline-primary" href="bwb.html">See More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="bwb.png" alt="BWB UAV">
+        </div>
       </div>
-    </div>
-    <div >
-      <img src="data.png">
-    </div>
-  </div>
 
- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h1 class="display-4">Snow Leopard Detection</h1>
-        <p class="lead">Software-in-the-loop(SITL) was performed for the BWB-UAV using Gazebo simulator.In the simulation ROS2 code was used to detect snow leopard 
-        with the help of YOLOv5. Autonomous flight was planned through px4 and QGroundcontrol</p>
-        <a class="btn btn-outline-secondary" href="https://youtu.be/Dey3QArN3rI?si=hFQ-KibwGXsPXutS">See More</a>
+      <div class="row align-items-center project-card">
+        <div class="col-md-6">
+          <h2 class="fw-bold">Flight In-Situ Data Acquisition</h2>
+          <p>A simple data acquisition system was built using Arduino which was used for collection of various data like temperature, humidity etc.</p>
+          <a class="btn btn-outline-primary" href="insitu.html">See More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="data.png" alt="Data Acquisition">
+        </div>
       </div>
-    </div>
-    <div >
-      <video width="500" height="500" loop autoplay muted controls id="vid">
-          <source src = "snow.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </div>
 
+      <div class="row align-items-center project-card">
+        <div class="col-md-6">
+          <h2 class="fw-bold">Snow Leopard Detection</h2>
+          <p>Software-in-the-loop (SITL) simulation was performed for the BWB-UAV using Gazebo. ROS2 code was used to detect snow leopards with YOLOv5 and autonomous flight was controlled via PX4 and QGroundControl.</p>
+          <a class="btn btn-outline-primary" href="https://youtu.be/Dey3QArN3rI?si=hFQ-KibwGXsPXutS" target="_blank">See More</a>
+        </div>
+        <div class="col-md-6">
+          <video loop autoplay muted controls>
+            <source src="snow.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </main>
 
-</main>
+    <footer class="bg-light text-center py-4 mt-5">
+      <p class="mb-0">&copy; 2025 Anurag Karki. All rights reserved.</p>
+    </footer>
 
-<footer class="container py-5">
-  <div class="row">
-
-    </div>
-
-</footer>
-
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
