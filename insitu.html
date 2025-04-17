@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CV</title>
-     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.108.0">
-    <title>anurag</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <link href="product.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>Flight In-situ Data Acquisition | Anurag Karki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #f1f1f1;
+      padding: 30px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-<header class="site-header py-3">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+  <header class="hero">
+    <div class="container">
+      <h1>Flight In-situ Data Acquisition</h1>
+      <p class="lead">Integrating environmental sensing and real-time telemetry into UAV platforms</p>
+    </div>
+  </header>
 
-    <a class="nav-link fw-bold py-1 px-0" href="cv.html">CV</a>
-    <a class="nav-link fw-bold py-1 px-0" href="index.html">Projects</a>
-    <a class="nav-link fw-bold py-1 px-0" href="Gallery.html">Gallery</a>
-    <a class="nav-link fw-bold py-1 px-0" href="contact.html">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Anurag</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-</header>
- <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <h1 class="display-5">Flight in-situ Data Acquisition</h1>
-     </div>
- <div class="d-md-flex flex-md-equal w-200 my-md-4 ps-md-3">
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-3 text-left overflow-hidden">
 
-        <h2 class="display-6">Research Methodology</h2>
-       <ul>  <p class="lead">• Various sensors were integrated to arduino to build a DAS.<br>
-         • Telemetry was integrated to DAS for communication.<br>
-        • Final DAS(Data Acquisation system) model was attached to a quadcopter.<br>
-        • Flight was initialized from the remote.<br>
-       • Live data collected from sensors were transmitted to groundstation through telemetry.<br>
-       • Live data received in ground station was processed to 2d and 3d graph using python.</p>
-</ul>
-
+  <main class="container my-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="section-title">Research Methodology</h2>
+        <ul>
+          <li>Integrated environmental sensors with an Arduino-based Data Acquisition System (DAS).</li>
+          <li>Implemented telemetry modules for wireless communication between UAV and ground station.</li>
+          <li>Mounted the DAS on a quadcopter and conducted multiple test flights.</li>
+          <li>Live sensor data was transmitted to the ground station in real-time via telemetry link.</li>
+          <li>Captured data was processed and visualized into 2D/3D graphs using Python scripts.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="das.jpg" alt="Data Acquisition System Setup">
+      </div>
     </div>
-    <div  >
-      <img  src="das.jpg">
-    </div>
-  </div>
 
-<div class="d-md-flex flex-md-equal w-200 my-md-4 ps-md-3">
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-3 text-left overflow-hidden">
-
-        <h2 class="display-6">Conclusion</h2>
-       <ul>  <p class="lead">•  Live environmental data like temperature, humidity etc. were collected and graphed<br>
-         • UAV merged with DAS is a stepping stone for decision support mechanism for various missions.<br>
-        • Missions like pollution source finding, wildlife conservation requires collection of spontaneous data and use of the data to make decision for the drone.<br>
-        </p>
-</ul>
-
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="section-title">Conclusion</h2>
+        <ul>
+          <li>Successfully captured live environmental data such as temperature and humidity during flight.</li>
+          <li>Enabled real-time decision-support capabilities through live telemetry and data visualization.</li>
+          <li>Demonstrated potential for future UAV-based missions like pollution source detection and wildlife monitoring.</li>
+          <li>The integration of DAS into UAV platforms is a key enabler for autonomous, data-driven decision-making.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="data.png" alt="Live Data Visualization">
+      </div>
     </div>
-    <div >
-      <img width="650" src="data.png">
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Anurag Karki. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
